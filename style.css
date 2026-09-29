@@ -1,0 +1,68 @@
+/* =========================================
+   FOB - Family Over Bullshit
+   Main stylesheet
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #11100d;
+    color: #e8dfc8;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, #3b2a16, #17130e);
+    border-bottom: 4px solid #b8862c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    letter-spacing: 0.12em;
+    color: #f2d27a;
+    text-shadow:
+        0 0 10px #000,
+        3px 3px 0 #21170b;
+}
+
+header p {
+    margin: 15px auto 0;
+    max-width: 700px;
+    font-size: 1.2rem;
+    color: #c9bea4;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 50px auto;
+}
+
+section {
+    background: #1c1914;
+    border: 1px solid #4f432e;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+    margin-top: 0;
+    color: #e5bd58;
+    border-bottom: 1px solid #4f432e;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #827862;
+    border-top: 1px solid #332c20;
+}
