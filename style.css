@@ -68,9 +68,11 @@ footer {
 }
 .intro {
     max-width: 1000px;
-    margin: 0 auto;
+    width: 92%;
+    margin: 50px auto;
     padding: 40px 30px 80px;
     text-align: center;
+}
 }
 
 .intro h1 {
