@@ -18,8 +18,15 @@ body {
 header {
     background: linear-gradient(to bottom, #3b2a16, #17130e);
     border-bottom: 4px solid #b8862c;
-    padding: o;
+    padding: 0;
     text-align: center;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 header h1 {
