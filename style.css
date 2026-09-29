@@ -111,3 +111,9 @@ footer {
     line-height: 1.7;
     color: #dddddd;
 }
+
+.azeroth-text {
+    color: #8ec5ff;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(142, 197, 255, 0.5);
+}
