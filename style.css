@@ -140,6 +140,102 @@ footer {
     text-shadow: 0 0 8px rgba(255, 59, 31, 0.55);
 }
 
+/* =========================================
+   FOB MAIN NAVIGATION
+   ========================================= */
+
+.main-navigation {
+    width: 92%;
+    max-width: 1400px;
+    margin: 45px auto 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+.nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-faction-title {
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+
+    margin-bottom: 5px;
+
+    color: #e5bd58;
+
+    text-shadow:
+        0 2px 4px #000;
+}
+
+.main-nav-button {
+    display: block;
+
+    padding: 14px 18px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+
+    color: #e8dfc8;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.main-nav-button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+}
+
+.who-we-are {
+    background:
+        linear-gradient(
+            to bottom,
+            #241f18,
+            #14110d
+        );
+
+    border: 1px solid #665537;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.who-we-are h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: #e5bd58;
+}
+
+.who-we-are p {
+    margin: 0;
+
+    color: #c9bea4;
+}
+
 /* ALLIANCE NAVIGATION */
 
 .alliance-nav {
