@@ -117,3 +117,20 @@ footer {
     font-weight: bold;
     text-shadow: 0 0 8px rgba(142, 197, 255, 0.5);
 }
+.gold-text {
+    color: #f2d27a;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(242, 210, 122, 0.45);
+}
+
+.horde-text {
+    color: #d94a4a;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(217, 74, 74, 0.45);
+}
+
+.alliance-text {
+    color: #4da6ff;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(77, 166, 255, 0.45);
+}
