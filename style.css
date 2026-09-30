@@ -139,3 +139,32 @@ footer {
     font-weight: bold;
     text-shadow: 0 0 8px rgba(255, 59, 31, 0.55);
 }
+/* =========================================
+   RAIDING - UNDER CONSTRUCTION
+   ========================================= */
+
+.raid-button {
+    max-width: 800px;
+    margin: 35px auto 0;
+    text-align: center;
+}
+
+.raid-button a {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.raid-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #555;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+.raid-button a:hover {
+    transform: scale(1.02);
+    filter: brightness(1.12);
+}
