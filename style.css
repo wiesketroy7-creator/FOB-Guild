@@ -134,3 +134,8 @@ footer {
     font-weight: bold;
     text-shadow: 0 0 8px rgba(77, 166, 255, 0.45);
 }
+.fire-text {
+    color: #ff3b1f;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 59, 31, 0.55);
+}
