@@ -138,6 +138,39 @@ footer {
     color: #ff3b1f;
     font-weight: bold;
     text-shadow: 0 0 8px rgba(255, 59, 31, 0.55);
+
+   /* =========================================
+   FOB APPLICATION SCROLL
+   ========================================= */
+
+.application-button {
+    max-width: 700px;
+    width: 90%;
+    margin: 30px auto 45px;
+    text-align: center;
+}
+
+.application-button a {
+    display: block;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.application-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.45),
+        0 0 15px rgba(184, 134, 44, 0.2);
+}
+
+.application-button a:hover {
+    transform: scale(1.03);
+    filter: brightness(1.12);
 }
 /* =========================================
    RAIDING - UNDER CONSTRUCTION
