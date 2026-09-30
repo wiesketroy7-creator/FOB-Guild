@@ -168,3 +168,183 @@ footer {
     transform: scale(1.02);
     filter: brightness(1.12);
 }
+/* =========================================
+   FOB LOWER FEATURE CARDS
+   ========================================= */
+
+.bottom-feature-row {
+    max-width: 1200px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1.35fr 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 260px;
+
+    padding: 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #e8dfc8;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.12);
+}
+
+.feature-title {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
+
+.feature-icon {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.feature-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.feature-link {
+    margin-top: auto;
+    padding-top: 15px;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   FAIL OF THE WEEK
+   ========================================= */
+
+.fail-card {
+    background:
+        linear-gradient(
+            to bottom,
+            #30261d,
+            #18130f
+        );
+
+    border: 2px solid #80664b;
+
+    box-shadow:
+        0 6px 0 #0d0906,
+        0 0 15px rgba(150, 100, 60, 0.2);
+}
+
+.fail-card:hover {
+    box-shadow:
+        0 6px 0 #0d0906,
+        0 0 25px rgba(180, 120, 60, 0.45);
+}
+
+
+/* =========================================
+   RAIDING
+   ========================================= */
+
+.raid-card {
+    padding: 0;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #332817,
+            #15110c
+        );
+
+    border: 2px solid #b8862c;
+
+    box-shadow:
+        0 6px 0 #0b0805,
+        0 0 18px rgba(184, 134, 44, 0.25);
+}
+
+.raid-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.raid-label {
+    padding-top: 12px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #f2d27a;
+}
+
+.raid-card .feature-link {
+    padding-bottom: 18px;
+    color: #b8862c;
+}
+
+
+/* =========================================
+   NEW AROUND THE FIRE
+   ========================================= */
+
+.family-card {
+    background:
+        linear-gradient(
+            to bottom,
+            #452719,
+            #1d120c
+        );
+
+    border: 2px solid #a65d32;
+
+    box-shadow:
+        0 6px 0 #0d0805,
+        0 0 15px rgba(200, 90, 35, 0.2);
+}
+
+.family-card:hover {
+    box-shadow:
+        0 6px 0 #0d0805,
+        0 0 25px rgba(220, 100, 40, 0.45);
+}
+
+.family-card .feature-link {
+    color: #e5a15a;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .bottom-feature-row {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        min-height: 220px;
+    }
+
+}
