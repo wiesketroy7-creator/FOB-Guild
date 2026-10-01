@@ -145,16 +145,13 @@ footer {
    ========================================= */
 
 .main-navigation {
-    width: 92%;
-    max-width: 1400px;
-    margin: 45px auto 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    gap: 30px;
-
-    align-items: stretch;
+    display: contents;
 }
+
+
+/* =========================================
+   NAVIGATION COLUMNS
+   ========================================= */
 
 .nav-column {
     display: flex;
@@ -162,322 +159,28 @@ footer {
     gap: 12px;
 }
 
-.nav-faction-title {
-    text-align: center;
-
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 0.12em;
-
-    margin-bottom: 5px;
-
-    color: #e5bd58;
-
-    text-shadow:
-        0 2px 4px #000;
-}
-
-.main-nav-button {
-    display: block;
-
-    padding: 14px 18px;
-
-    text-align: center;
-    text-decoration: none;
-
-    font-size: 17px;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-
-    color: #e8dfc8;
-
-    border-radius: 8px;
-
-    transition:
-        transform 0.2s ease,
-        filter 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.main-nav-button:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.15);
-}
-
-.who-we-are {
-    background:
-        linear-gradient(
-            to bottom,
-            #241f18,
-            #14110d
-        );
-
-    border: 1px solid #665537;
-    border-radius: 10px;
-
-    padding: 25px;
-
-    text-align: center;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-.who-we-are h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-
-    color: #e5bd58;
-}
-
-.who-we-are p {
-    margin: 0;
-
-    color: #c9bea4;
-}
 
 /* =========================================
-   FOB MAIN NAVIGATION - ART BACKPLATE
+   HIDE FACTION HEADERS
    ========================================= */
 
-/* SHARED BUTTON ART */
+.nav-faction-title {
+    display: none;
+}
+
+
+/* =========================================
+   SHARED NAV BUTTON
+   ========================================= */
 
 .main-nav-button {
     position: relative;
-    overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     min-height: 52px;
-    padding: 12px 14px;
-
-    color: #e8dfc8;
-    text-decoration: none;
-    text-align: center;
-
-    border-radius: 8px;
-
-    font-weight: bold;
-    letter-spacing: 0.06em;
-
-    transition:
-        transform 0.2s ease,
-        filter 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-/* ART BACKPLATE */
-
-.main-nav-button::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    pointer-events: none;
-
-    opacity: 0.55;
-
-    background:
-        radial-gradient(
-            circle at 50% 45%,
-            rgba(255,255,255,0.10),
-            transparent 42%
-        ),
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.08),
-            transparent 35%,
-            rgba(0,0,0,0.28) 75%
-        );
-}
-
-
-/* TEXT STAYS ABOVE ART */
-
-.main-nav-button {
-    z-index: 1;
-}
-
-.main-nav-button::before {
-    z-index: -1;
-}
-
-
-/* =========================================
-   ALLIANCE ART
-   ========================================= */
-
-.alliance-nav {
-
-    background:
-        radial-gradient(
-            ellipse at center,
-            #41698f 0%,
-            #263f5c 42%,
-            #111c2b 100%
-        );
-
-    border: 2px solid #6fa7df;
-
-    box-shadow:
-        inset 0 0 18px rgba(130, 190, 255, 0.18),
-        0 5px 0 #080d14,
-        0 0 16px rgba(77, 143, 209, 0.28);
-}
-
-
-/* ALLIANCE BACKPLATE */
-
-.alliance-nav::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 72px;
-    height: 72px;
-
-    right: -8px;
-    top: 50%;
-
-    transform: translateY(-50%) rotate(45deg);
-
-    border: 2px solid rgba(150, 205, 255, 0.16);
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(120, 190, 255, 0.14),
-            rgba(50, 90, 130, 0.04) 65%,
-            transparent 70%
-        );
-
-    box-shadow:
-        inset 0 0 12px rgba(150, 205, 255, 0.10);
-
-    opacity: 0.75;
-
-    pointer-events: none;
-}
-
-
-.alliance-nav:hover {
-
-    transform: translateY(-2px);
-
-    filter: brightness(1.12);
-
-    box-shadow:
-        inset 0 0 22px rgba(130, 190, 255, 0.25),
-        0 7px 0 #080d14,
-        0 0 25px rgba(77, 166, 255, 0.45);
-}
-
-
-/* =========================================
-   HORDE ART
-   ========================================= */
-
-.horde-nav {
-
-    background:
-        radial-gradient(
-            ellipse at center,
-            #71362d 0%,
-            #54251f 42%,
-            #24100d 100%
-        );
-
-    border: 2px solid #c45c4e;
-
-    box-shadow:
-        inset 0 0 18px rgba(255, 100, 75, 0.16),
-        0 5px 0 #0b0705,
-        0 0 16px rgba(217, 74, 74, 0.28);
-}
-
-
-/* HORDE BACKPLATE */
-
-.horde-nav::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 72px;
-    height: 72px;
-
-    left: -8px;
-    top: 50%;
-
-    transform: translateY(-50%) rotate(45deg);
-
-    border: 2px solid rgba(255, 125, 95, 0.16);
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255, 90, 65, 0.15),
-            rgba(110, 35, 25, 0.04) 65%,
-            transparent 70%
-        );
-
-    box-shadow:
-        inset 0 0 12px rgba(255, 100, 75, 0.10);
-
-    opacity: 0.75;
-
-    pointer-events: none;
-}
-
-
-.horde-nav:hover {
-
-    transform: translateY(-2px);
-
-    filter: brightness(1.12);
-
-    box-shadow:
-        inset 0 0 22px rgba(255, 100, 75, 0.23),
-        0 7px 0 #0b0705,
-        0 0 25px rgba(217, 74, 74, 0.45);
-}
-/* =========================================
-   FOB MAIN NAVIGATION
-   ========================================= */
-
-.main-navigation {
-    display: contents;
-}
-
-/* Hide the temporary center placeholder.
-   The real FOB story is already in .intro below. */
-
-.who-we-are {
-    display: none;
-}
-
-.nav-column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.nav-faction-title {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.12em;
-    margin-bottom: 5px;
-}
-
-.main-nav-button {
-    display: block;
     padding: 12px 10px;
 
     text-align: center;
@@ -491,16 +194,106 @@ footer {
 
     border-radius: 8px;
 
+    overflow: hidden;
+
     transition:
         transform 0.2s ease,
         filter 0.2s ease,
         box-shadow 0.2s ease;
 }
 
-.main-nav-button:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.15);
+
+/* =========================================
+   ALLIANCE BUTTONS
+   ========================================= */
+
+.alliance-nav {
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(18, 35, 55, 0.90),
+            rgba(25, 55, 85, 0.72)
+        ),
+        url("FOB-Alliance-Art.png");
+
+    background-repeat: no-repeat;
+
+    background-position:
+        center,
+        right center;
+
+    background-size:
+        cover,
+        90px 90px;
+
+    border: 2px solid #4d8fd1;
+
+    box-shadow:
+        inset 0 0 15px rgba(120, 190, 255, 0.15),
+        0 5px 0 #080d14,
+        0 0 16px rgba(77, 143, 209, 0.28);
 }
+
+
+.alliance-nav:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(1.12);
+
+    box-shadow:
+        inset 0 0 20px rgba(120, 190, 255, 0.22),
+        0 7px 0 #080d14,
+        0 0 25px rgba(77, 166, 255, 0.45);
+}
+
+
+/* =========================================
+   HORDE BUTTONS
+   ========================================= */
+
+.horde-nav {
+
+    background-image:
+        linear-gradient(
+            to left,
+            rgba(70, 20, 16, 0.90),
+            rgba(55, 18, 14, 0.72)
+        ),
+        url("FOB-Horde-Art.png");
+
+    background-repeat: no-repeat;
+
+    background-position:
+        center,
+        left center;
+
+    background-size:
+        cover,
+        90px 90px;
+
+    border: 2px solid #b94a3e;
+
+    box-shadow:
+        inset 0 0 15px rgba(255, 100, 75, 0.14),
+        0 5px 0 #0b0705,
+        0 0 16px rgba(217, 74, 74, 0.28);
+}
+
+
+.horde-nav:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(1.12);
+
+    box-shadow:
+        inset 0 0 20px rgba(255, 100, 75, 0.20),
+        0 7px 0 #0b0705,
+        0 0 25px rgba(217, 74, 74, 0.45);
+}
+
 
 /* =========================================
    DESKTOP NAV LAYOUT
@@ -517,13 +310,16 @@ footer {
             minmax(130px, 180px);
 
         justify-content: center;
+
         column-gap: 28px;
     }
+
 
     .application-button {
         grid-column: 1 / -1;
         grid-row: 1;
     }
+
 
     .alliance-column {
         grid-column: 1;
@@ -533,6 +329,7 @@ footer {
         margin-top: 65px;
     }
 
+
     .horde-column {
         grid-column: 3;
         grid-row: 2;
@@ -540,6 +337,7 @@ footer {
         align-self: start;
         margin-top: 65px;
     }
+
 
     .intro {
         grid-column: 2;
@@ -551,30 +349,16 @@ footer {
         margin: 0;
     }
 
+
     .bottom-feature-row {
         grid-column: 1 / -1;
         grid-row: 3;
     }
 }
 
-/* =========================================
-   FACTION HEADERS
-   ========================================= */
-
-.alliance-column .nav-faction-title {
-    color: #6eafff;
-    text-shadow:
-        0 0 8px rgba(77, 166, 255, 0.5);
-}
-
-.horde-column .nav-faction-title {
-    color: #e05a50;
-    text-shadow:
-        0 0 8px rgba(217, 74, 74, 0.5);
-}
 
 /* =========================================
-   MOBILE
+   MOBILE NAVIGATION
    ========================================= */
 
 @media (max-width: 900px) {
@@ -583,17 +367,21 @@ footer {
         display: block;
     }
 
+
     .nav-column {
         margin: 20px auto;
+
         width: 90%;
         max-width: 500px;
     }
+
 
     .intro {
         width: 92%;
     }
 
 }
+
    /* =========================================
    FOB APPLICATION SCROLL
    ========================================= */
