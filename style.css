@@ -282,6 +282,154 @@ footer {
         0 8px 0 #0d0806,
         0 0 28px rgba(217, 74, 74, 0.5);
 }
+
+/* =========================================
+   FOB MAIN NAVIGATION
+   ========================================= */
+
+.main-navigation {
+    display: contents;
+}
+
+/* Hide the temporary center placeholder.
+   The real FOB story is already in .intro below. */
+
+.who-we-are {
+    display: none;
+}
+
+.nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-faction-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    margin-bottom: 5px;
+}
+
+.main-nav-button {
+    display: block;
+    padding: 12px 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #e8dfc8;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.main-nav-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+/* =========================================
+   DESKTOP NAV LAYOUT
+   ========================================= */
+
+@media (min-width: 901px) {
+
+    main {
+        display: grid;
+
+        grid-template-columns:
+            minmax(130px, 180px)
+            minmax(600px, 1000px)
+            minmax(130px, 180px);
+
+        justify-content: center;
+        column-gap: 28px;
+    }
+
+    .application-button {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .alliance-column {
+        grid-column: 1;
+        grid-row: 2;
+
+        align-self: start;
+        margin-top: 65px;
+    }
+
+    .horde-column {
+        grid-column: 3;
+        grid-row: 2;
+
+        align-self: start;
+        margin-top: 65px;
+    }
+
+    .intro {
+        grid-column: 2;
+        grid-row: 2;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+    }
+
+    .bottom-feature-row {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+}
+
+/* =========================================
+   FACTION HEADERS
+   ========================================= */
+
+.alliance-column .nav-faction-title {
+    color: #6eafff;
+    text-shadow:
+        0 0 8px rgba(77, 166, 255, 0.5);
+}
+
+.horde-column .nav-faction-title {
+    color: #e05a50;
+    text-shadow:
+        0 0 8px rgba(217, 74, 74, 0.5);
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .main-navigation {
+        display: block;
+    }
+
+    .nav-column {
+        margin: 20px auto;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .intro {
+        width: 92%;
+    }
+
+}
    /* =========================================
    FOB APPLICATION SCROLL
    ========================================= */
