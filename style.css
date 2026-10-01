@@ -236,53 +236,217 @@ footer {
     color: #c9bea4;
 }
 
-/* ALLIANCE NAVIGATION */
+/* =========================================
+   FOB MAIN NAVIGATION - ART BACKPLATE
+   ========================================= */
+
+/* SHARED BUTTON ART */
+
+.main-nav-button {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 12px 14px;
+
+    color: #e8dfc8;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    letter-spacing: 0.06em;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ART BACKPLATE */
+
+.main-nav-button::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: 0.55;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255,255,255,0.10),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.08),
+            transparent 35%,
+            rgba(0,0,0,0.28) 75%
+        );
+}
+
+
+/* TEXT STAYS ABOVE ART */
+
+.main-nav-button {
+    z-index: 1;
+}
+
+.main-nav-button::before {
+    z-index: -1;
+}
+
+
+/* =========================================
+   ALLIANCE ART
+   ========================================= */
 
 .alliance-nav {
+
     background:
-        linear-gradient(
-            to bottom,
-            #263d5a,
-            #111b2a
+        radial-gradient(
+            ellipse at center,
+            #41698f 0%,
+            #263f5c 42%,
+            #111c2b 100%
         );
 
-    border: 2px solid #4d8fd1;
+    border: 2px solid #6fa7df;
 
     box-shadow:
-        0 6px 0 #080d14,
-        0 0 18px rgba(77, 143, 209, 0.25);
+        inset 0 0 18px rgba(130, 190, 255, 0.18),
+        0 5px 0 #080d14,
+        0 0 16px rgba(77, 143, 209, 0.28);
 }
+
+
+/* ALLIANCE BACKPLATE */
+
+.alliance-nav::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 72px;
+    height: 72px;
+
+    right: -8px;
+    top: 50%;
+
+    transform: translateY(-50%) rotate(45deg);
+
+    border: 2px solid rgba(150, 205, 255, 0.16);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(120, 190, 255, 0.14),
+            rgba(50, 90, 130, 0.04) 65%,
+            transparent 70%
+        );
+
+    box-shadow:
+        inset 0 0 12px rgba(150, 205, 255, 0.10);
+
+    opacity: 0.75;
+
+    pointer-events: none;
+}
+
 
 .alliance-nav:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(1.12);
+
     box-shadow:
-        0 8px 0 #080d14,
-        0 0 28px rgba(77, 166, 255, 0.5);
+        inset 0 0 22px rgba(130, 190, 255, 0.25),
+        0 7px 0 #080d14,
+        0 0 25px rgba(77, 166, 255, 0.45);
 }
 
 
-/* HORDE NAVIGATION */
+/* =========================================
+   HORDE ART
+   ========================================= */
 
 .horde-nav {
+
     background:
-        linear-gradient(
-            to bottom,
-            #54251f,
-            #24100d
+        radial-gradient(
+            ellipse at center,
+            #71362d 0%,
+            #54251f 42%,
+            #24100d 100%
         );
 
-    border: 2px solid #b94a3e;
+    border: 2px solid #c45c4e;
 
     box-shadow:
-        0 6px 0 #0d0806,
-        0 0 18px rgba(217, 74, 74, 0.25);
+        inset 0 0 18px rgba(255, 100, 75, 0.16),
+        0 5px 0 #0b0705,
+        0 0 16px rgba(217, 74, 74, 0.28);
 }
+
+
+/* HORDE BACKPLATE */
+
+.horde-nav::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 72px;
+    height: 72px;
+
+    left: -8px;
+    top: 50%;
+
+    transform: translateY(-50%) rotate(45deg);
+
+    border: 2px solid rgba(255, 125, 95, 0.16);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 90, 65, 0.15),
+            rgba(110, 35, 25, 0.04) 65%,
+            transparent 70%
+        );
+
+    box-shadow:
+        inset 0 0 12px rgba(255, 100, 75, 0.10);
+
+    opacity: 0.75;
+
+    pointer-events: none;
+}
+
 
 .horde-nav:hover {
-    box-shadow:
-        0 8px 0 #0d0806,
-        0 0 28px rgba(217, 74, 74, 0.5);
-}
 
+    transform: translateY(-2px);
+
+    filter: brightness(1.12);
+
+    box-shadow:
+        inset 0 0 22px rgba(255, 100, 75, 0.23),
+        0 7px 0 #0b0705,
+        0 0 25px rgba(217, 74, 74, 0.45);
+}
 /* =========================================
    FOB MAIN NAVIGATION
    ========================================= */
