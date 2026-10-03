@@ -168,6 +168,9 @@ footer {
     display: none;
 }
 
+.who-we-are {
+    display: none;
+}
 
 /* =========================================
    SHARED NAV BUTTON
@@ -212,8 +215,8 @@ footer {
     background-image:
         linear-gradient(
             to right,
-            rgba(18, 35, 55, 0.90),
-            rgba(25, 55, 85, 0.72)
+            rgba(18, 35, 55, 0.55),
+            rgba(25, 55, 85, 0.35)
         ),
         url("FOB-Alliance-Art.png");
 
@@ -225,7 +228,7 @@ footer {
 
     background-size:
         cover,
-        90px 90px;
+        auto 100%;
 
     border: 2px solid #4d8fd1;
 
@@ -258,8 +261,8 @@ footer {
     background-image:
         linear-gradient(
             to left,
-            rgba(70, 20, 16, 0.90),
-            rgba(55, 18, 14, 0.72)
+            rgba(70, 20, 16, 0.55),
+            rgba(55, 18, 14, 0.35)
         ),
         url("FOB-Horde-Art.png");
 
@@ -271,7 +274,7 @@ footer {
 
     background-size:
         cover,
-        90px 90px;
+        auto 100%;
 
     border: 2px solid #b94a3e;
 
