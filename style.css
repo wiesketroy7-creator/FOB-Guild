@@ -657,9 +657,10 @@ footer {
 /* Main page area */
 
 .class-guides-main {
-    width: 92%;
-    max-width: 1100px;
-    margin: 60px auto;
+   display: block;
+   width: 92%;
+   max-width: 1100px;
+   margin: 60px auto;
 }
 
 
